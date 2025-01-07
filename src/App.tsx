@@ -1,8 +1,11 @@
+import BirdPage from './pages/BirdPage';
 function App() {
-
   return (
-    <h1>Hello, World!</h1>
-  )
+    <div>
+      
+      <BirdPage />
+    </div>
+  );
 }
 
-export default App
+export default App;
