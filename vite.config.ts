@@ -1,14 +1,14 @@
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from "vitest/config";
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [],
-  test:{
-    globals:true,
-    environment:"jsdom",
-    setupFiles:  ["./vitest.setup.js"]
+  server: {
+    allowedHosts: ["gh66dz-5173.csb.app"],
   },
-  server:{
-    allowedHosts:true
-  }
-})
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: ["./vitest.setup.js"],
+  },
+});
